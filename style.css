@@ -34,7 +34,13 @@ body {
   background: rgb(14, 19, 35);
 }
 
-
+div,
+h1,
+p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 /* ========================================================================= */
 /* 2. TYPOGRAPHY */
