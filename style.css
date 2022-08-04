@@ -81,6 +81,9 @@ p {
   #calendar-txt > h2:focus {
     color: rgb(255, 255, 255);
   }
+    #calendar-txt > #dailyBtn {
+      color: rgb(255, 255, 255);
+    }
 
 /* STATS SECTION | TYPOGRAPHY */
 .stats h3 {
