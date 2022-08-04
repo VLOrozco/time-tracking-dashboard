@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
-
 /* font-family: 'Rubik', sans-serif; */
 
-
 /* ========================================================================= */
-
+/* MOBILE-FIRST RESPONSIVE WEBPAGE 
+@ min-width:375px */
 /*  ======================
 TABLE OF CONTENTS
 1. GLOBAL
@@ -25,29 +24,67 @@ html, body {
 
 body {
   box-sizing: border-box;
-  font-family: 'Rubik', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 18px;
-  color: rgba(187, 192, 255, 1);
-
   background: rgb(14, 19, 35);
 }
 
 div,
 h1,
 h2,
+h3,
 p {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba(187, 192, 255, 1);
+  letter-spacing: 0px;
+  text-align: center;
 }
 
 /* ========================================================================= */
 /* 2. TYPOGRAPHY */
+/* MAIN CONTAINER NAME | TYPOGRAPHY */
+#main-txt .main-container h1 {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgb(255, 255, 255);
+}
+/* MAIN CALENDAR TEXT | TYPOGRAPHY */
+#calendar-txt > h2, .stats h3 {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+}
+  /* MAIN H2 TEXT | TYPOGRAPHY */
+  #calendar-txt > h2 {
+    cursor: pointer;
+  }
+  #calendar-txt > h2:hover,
+  #calendar-txt > h2:active,
+  #calendar-txt > h2:focus {
+    color: rgb(255, 255, 255);
+  }
 
+.stats h3 {
+  font-weight: 500;
+}
 
+.current-hours > div {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 38px;
+  color: rgb(255, 255, 255);
+}
 
+.last-week-hours > div {
+  text-align: right;
+  color: rgb(187, 192, 255);
+}
 
 .attribution {
   font-size: 11px; text-align: center;
