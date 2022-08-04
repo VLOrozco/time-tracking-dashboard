@@ -242,7 +242,12 @@ p {
   background: rgb(28, 32, 75);
   border-radius: 15px;
   z-index: 1;
+  cursor: pointer;
 }
+  .stats:hover,
+  .stats:active {
+    background: rgb(51, 57, 122);
+  }
   .stats img {
     margin-top: 5px;
   }
