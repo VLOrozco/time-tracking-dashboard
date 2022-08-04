@@ -15,6 +15,9 @@ TABLE OF CONTENTS
 
 /* ========================================================================= */
 /* 1. GLOBAL */
+/* * {
+  outline: 1px solid white;
+} */
 html, body {
   width: 100%;
   height: 100%;
@@ -49,17 +52,23 @@ p {
 /* ========================================================================= */
 /* 2. TYPOGRAPHY */
 /* MAIN CONTAINER NAME | TYPOGRAPHY */
-#main-txt .main-container h1 {
+#main-header .main-container h1 {
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
   color: rgb(255, 255, 255);
+  text-align: left;
 }
+  .main-container p {
+    text-align: left;
+  }
+
 /* MAIN CALENDAR TEXT | TYPOGRAPHY */
 #calendar-txt > h2, .stats h3 {
   font-size: 18px;
   font-weight: 300;
   line-height: 21px;
+  color: rgb(112, 120, 201);
 }
   /* MAIN H2 TEXT | TYPOGRAPHY */
   #calendar-txt > h2 {
@@ -74,6 +83,7 @@ p {
 /* STATS SECTION | TYPOGRAPHY */
 .stats h3 {
   font-weight: 500;
+  color: rgb(255, 255, 255);
 }
   .current-hours > div {
     font-weight: 300;
@@ -96,9 +106,183 @@ p {
 
 /* ========================================================================= */
 /* 3. LAYOUT */
+/* FLEXBOX */
+#container,
+#main,
+#main-header,
+#calendar-txt,
+.stats-top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+#container {
+  width: 100%;
+  height: 1469px;
+  /* flexbox */
+}
 
+/* MAIN SECTION | LAYOUT */
+#main,
+#main-header {
+  width: 327px;
+  border-radius: 15px;
+}
+#main {
+  height: 203px;
+  margin-top: 42px;
+  background: rgb(28, 32, 75);
+}
+  #main-header {
+    height: 133px;
+    margin-top: -1.7rem;
+    padding-top: 5px;
+    background: rgb(87, 71, 234);
 
+    /* flexbox */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main-header img {
+    width: 64px;
+    height: 64px;
+    border: 3.8px solid rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+
+  #main .main-container {
+    width: 172;
+    height: 50;
+  }
+  .main-container {
+    margin-left: 20px;
+  }
+
+/* CALENDAR CONTAINER | LAYOUT */
+#calendar-container {
+  width: 98%;
+}
+#calendar-txt {
+  width: 327px;
+  margin-top: 24px;
+  /* flexbox */
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* STATS SECTION | LAYOUT */
+.section-content {
+  width: 327px;
+  height: 160px;
+  margin: 24px;
+  border-radius: 15px;
+}
+
+/* STATS ICONS | LAYOUT */
+#work:nth-child(1),
+#play:nth-child(2),
+#study:nth-child(3),
+#exercise:nth-child(4),
+#social:nth-child(5),
+#self-care:nth-child(6) {
+  background-repeat: no-repeat;
+}
+  #work:nth-child(1) {
+    background-image: url('images/icon-work.svg');
+    background-position: 90% -12%;
+    background-color: rgb(255, 139, 100);    
+  }
+  #play:nth-child(2) {
+    background-image: url('images/icon-play.svg');
+    background-position: 90% -7%;
+    background-color: rgb(85, 194, 230);
+  }
+  #study:nth-child(3) {
+    background-image: url('images/icon-study.svg');
+    background-position: 92% -7%;
+    background-color: rgb(255, 94, 125);
+  }
+  #exercise:nth-child(4) {
+    background-image: url('images/icon-exercise.svg');
+    background-position: 90% 1%;
+    background-color: rgb(75, 207, 130);
+  }
+  #social:nth-child(5) {
+    background-image: url('images/icon-social.svg');
+    background-position: 90% -25%;
+    background-color: rgb(115, 53, 210);
+  }
+  #self-care:nth-child(6) {
+    background-image: url('images/icon-self-care.svg');
+    background-position: 94% -12%;
+    background-color:  rgb(241, 199, 91);
+  }
+
+/* STATS CONTENT | LAYOUT */
+.stats {
+  width: 327px;
+  height: 122px;
+  padding: 27px 33px;
+  position: relative;
+  bottom: -40px;
+  background: rgb(28, 32, 75);
+  border-radius: 15px;
+  z-index: 1;
+}
+  .stats img {
+    margin-top: 5px;
+  }
+.stats-top-section {
+  /* flex */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.stats-bottom-section {
+  position: relative;
+  margin-top: 3px;
+}
+
+/* STATS HOURS SECTION | LAYOUT */
+.current-hours > div {
+  position: absolute;
+  margin-top: 5px;
+}
+  .daily-hrs {
+    opacity: 1;
+  }
+  .weekly-hrs {
+    opacity: 0;
+  }
+  .monthly-hrs {
+    opacity: 0;
+  }
+.last-week-hours > div {
+  position: absolute;
+  margin-top: 1rem;
+  right: 0;
+}
+  .daily-last-wk {
+    opacity: 1;
+  }
+  .weekly-last-wk {
+    opacity: 0;
+  }
+  .monthly-last-wk {
+    opacity: 0;
+  }
+
+/* ATTRIBUTION | LAYOUT */
+.attribution {
+  width: 375px;
+  margin: auto;
+  position: relative;
+  bottom: 1rem;
+}
 
 /* ========================================================================= */
 /* 4. MEDIA QUERY */
