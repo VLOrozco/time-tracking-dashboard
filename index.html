@@ -8,7 +8,6 @@
   <title>Frontend Mentor | Time tracking dashboard</title>
 
   <link rel="stylesheet" href="style.css">
-  <script type="text/javascript" src="data.json"></script>
   <script type="text/javascript" src="main.js" defer></script>
 </head>
 <body>
@@ -31,17 +30,17 @@
 
 
       <div id="calendar-container">
-        <div id="calendar-txt">
+        <div id="calendar-txt" role="tablist" aria-label="Time Tracking across sections">
 
-          <h2 class="daily">
+          <h2 id="dailyBtn" class="daily" role="tab" aria-selected="true" aria-controls="panel-daily" >
             Daily
           </h2>
 
-          <h2 class="weekly">
+          <h2 id="weeklyBtn" class="weekly" role="tab" aria-selected="false" aria-controls="panel-weekly">
             Weekly
           </h2>
 
-          <h2 class="monthly">
+          <h2 id="monthlyBtn" class="monthly" role="tab" aria-selected="false" aria-controls="panel-monthly">
             Monthly
           </h2>
 
@@ -67,7 +66,7 @@
           </div>
 
           <!-- WORK HOURS -->
-          <div class="stats-bottom-section">
+          <div id="work-hours" class="stats-bottom-section">
             <div class="current-hours">
               <div class="daily-hrs">
                 5hrs
@@ -110,7 +109,7 @@
           </div>
 
           <!-- PLAY HOURS -->
-          <div class="stats-bottom-section">
+          <div id="play-hours" class="stats-bottom-section">
             <div class="current-hours">
               <div class="daily-hrs">
                 1hr
@@ -154,7 +153,7 @@
           </div>
 
           <!-- STUDY HOURS -->
-          <div class="stats-bottom-section">
+          <div id="study-hours" class="stats-bottom-section">
             <div class="current-hours">
               <div class="daily-hrs">
                 0hrs
@@ -197,7 +196,7 @@
           </div>
 
           <!-- EXERCISE HOURS -->
-          <div class="stats-bottom-section">
+          <div id="exercise-hours" class="stats-bottom-section">
             <div class="current-hours">
               <div class="daily-hrs">1hr</div>
               <div class="weekly-hrs">4hrs</div>
@@ -235,7 +234,7 @@
           </div>
 
           <!-- SOCIAL HOURS -->
-          <div class="stats-bottom-section">
+          <div id="social-hours" class="stats-bottom-section">
             <div class="current-hours">
               <div class="daily-hrs">
                 1hr
@@ -278,7 +277,7 @@
           </div>
 
           <!-- SELF-CARE HOURS -->
-          <div class="stats-bottom-section">
+          <div id="selfCare-hours" class="stats-bottom-section">
             <div class="current-hours">
               <div class="daily-hrs">
                 0hrs
