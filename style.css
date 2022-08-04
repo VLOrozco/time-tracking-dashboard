@@ -27,6 +27,7 @@ html, body {
 
 body {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   background: rgb(14, 19, 35);
 }
 
@@ -37,6 +38,7 @@ h2,
 h3,
 p {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   margin: 0;
   padding: 0;
 
@@ -116,6 +118,7 @@ p {
 .stats-top-section {
   display: flex;
   flex-direction: column;
+  -webkit-flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -131,6 +134,7 @@ p {
 #main-header {
   width: 327px;
   border-radius: 15px;
+  -webkit-border-radius: 15px;
 }
 #main {
   height: 203px;
@@ -145,6 +149,7 @@ p {
 
     /* flexbox */
     flex-direction: row;
+    -webkit-flex-direction: row;
     justify-content: center;
     align-items: center;
   }
@@ -154,6 +159,7 @@ p {
     height: 64px;
     border: 3.8px solid rgb(255, 255, 255);
     border-radius: 50%;
+    -webkit-border-radius: 50%;
   }
 
   #main .main-container {
@@ -173,6 +179,7 @@ p {
   margin-top: 24px;
   /* flexbox */
   flex-direction: row;
+  -webkit-flex-direction: row;
   justify-content: space-around;
 }
 
@@ -182,6 +189,7 @@ p {
   height: 160px;
   margin: 24px;
   border-radius: 15px;
+  -webkit-border-radius: 15px;
 }
 
 /* STATS ICONS | LAYOUT */
@@ -233,6 +241,7 @@ p {
   bottom: -40px;
   background: rgb(28, 32, 75);
   border-radius: 15px;
+  -webkit-border-radius: 15px;
   z-index: 1;
   cursor: pointer;
 }
@@ -246,6 +255,7 @@ p {
 .stats-top-section {
   /* flex */
   flex-direction: row;
+  -webkit-flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -305,6 +315,7 @@ p {
 @media only screen and (min-width: 1120px) {
   #container {
     flex-direction: row;
+    -webkit-flex-direction: row;
     height: 1024px;
   }
   /* MAIN | MQ 1120 */
@@ -319,6 +330,7 @@ p {
       height: 354px;
       margin-top: -22px;
       flex-direction: column;
+      -webkit-flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
     }
@@ -376,8 +388,12 @@ p {
 
     /* GRID */
     display: grid;
+
     grid-template-rows: repeat(2, 1fr);
+    -webkit-grid-template-rows: repeat(2, 1fr);
+
     grid-template-columns: repeat(3, 1fr);
+    -webkit-grid-template-columns: repeat(3, 1fr);
     gap: 0;
   }
 
@@ -424,5 +440,6 @@ p {
     top: -10.5rem;
     right: 30.8rem;
     transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
   }
 }
