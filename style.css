@@ -85,16 +85,26 @@ p {
   font-weight: 500;
   color: rgb(255, 255, 255);
 }
-  .current-hours > div {
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 38px;
-    color: rgb(255, 255, 255);
+
+.ellipsis {
+  cursor: pointer;
+}
+  .ellipsis:hover,
+  .ellipsis:active {
+    filter: brightness(20);
   }
-  .last-week-hours > div {
-    text-align: right;
-    color: rgb(187, 192, 255);
-  }
+
+/* STATS HOURS | TYPOGRAPHY */
+.current-hours > div {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 38px;
+  color: rgb(255, 255, 255);
+}
+.last-week-hours > div {
+  text-align: right;
+  color: rgb(187, 192, 255);
+}
 
 /* ATTRIBUTION | TYPOGRAPHY */
 .attribution {
